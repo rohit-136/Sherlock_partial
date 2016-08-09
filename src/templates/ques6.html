@@ -1,0 +1,94 @@
+<!Doctype html>
+<html>
+
+<style>
+.quiz-question
+{
+   position: absolute;
+   top:600px;
+   left: 600px;
+   width: 800%;
+
+}
+h2 { 
+   position: absolute; 
+   top: 0px; 
+   left: 50px; 
+   width: 200%; 
+color:yellow;
+text-shadow: 2px 2px #FF0000;
+font-size:50px
+
+}
+
+h3{
+position: absolute;
+   top: 100px;
+   left: 100px;
+   width: 400%;
+color:red;
+font-size:30px
+
+
+}
+h4{
+position: absolute;
+   top: 150px;
+   left: 100px;
+   width: 400%;
+color:red;
+font-size:30px
+
+
+}
+h5{
+position: absolute;
+   top: 200px;
+   left: 100px;
+   width: 400%;
+color:red;
+font-size:30px
+}
+h6{
+position: absolute;
+   top: 250px;
+   left: 100px;
+   width: 400%;
+color:red;
+font-size:30px
+
+
+}
+
+body{
+height:300%;
+width:50%;
+}
+
+</style>
+<head>
+<title>Sherlock Quiz</title>
+<link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='assets/ms-icon-310x310.png')}}">
+</head>
+<body>
+
+<div class="image">
+
+      <img src="{{ url_for('static', filename='assets/redbeard.jpg')}}" style='position:fixed;top:0px;left:0px;width:100%;height:100%;'/>
+
+      <h2>Who is redbeard</h2>
+<h3>A. Another one of Sherlock's arch enemy </h3>
+</br>
+<h4>B. Moriarity's companion </h4>
+</br>
+<h5>C. His Dog</h5>
+</br>
+<h6>D. It was Sherlock's pirate name</h6>
+</br>
+</div>
+<div class="pull=left container quiz-question">
+      <a href="/5of15" class="btn btn-info btn-lg"  role="button">Previous Question </a>
+<a href="/7of15" class="btn btn-info"  role="button">Next Question </a>
+</div>
+</body>
+</html>

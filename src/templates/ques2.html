@@ -1,0 +1,100 @@
+<!Doctype html>
+<html>
+
+<style>
+.quiz-question
+{
+   position: absolute;
+   top:600px;
+   left: 600px;
+   width: 800%;
+
+}
+h2 { 
+   position: absolute; 
+   top: 0px; 
+   left: 50px; 
+   width: 200%; 
+color:yellow;
+text-shadow: 2px 2px #FF0000;
+font-size:50px
+
+}
+
+h3{
+position: absolute; 
+   top: 100px; 
+   left: 100px; 
+   width: 400%; 
+color:pink;
+font-size:30px
+
+
+}
+h4{
+position: absolute; 
+   top: 150px; 
+   left: 100px; 
+   width: 400%; 
+color:pink;
+font-size:30px
+
+
+}
+h5{
+position: absolute; 
+   top: 200px; 
+   left: 100px; 
+   width: 400%; 
+color:pink;
+font-size:30px
+}
+h6{
+position: absolute; 
+   top: 250px; 
+   left: 100px; 
+   width: 400%; 
+color:pink;
+font-size:30px
+
+
+}
+
+body{
+height:300%;
+width:50%;
+}
+
+</style>
+<head>
+<title>Sherlock Quiz</title>
+<link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='assets/ms-icon-310x310.png')}}">
+</head>
+<body>
+<div class="image">
+
+      <img src="{{ url_for('static', filename='assets/johnarmy.jpg')}}" style='position:fixed;top:0px;left:0px;width:100%;height:100%;'/>
+
+
+<div class="container">
+      <div class="jubotron">
+      <h2> In which country did John serve as an army doctor ?</h2>
+<h3>A. Afghanistan </h3>
+</br>
+<h4>B. Iraq </h4>
+</br>
+<h5>C. Germany</h5>
+</br>
+<h6>D. The Balkans</h6>
+</br>
+          </div>
+          <div class="pull=left container quiz-question">
+               <a href="/1of15" class="btn btn-info"  role="button">Previous Question </a>
+<a href="/3of15" class="btn btn-info"  role="button">Next Question </a>
+
+              </div>
+
+</div>
+      </div>
+</body>
+</html>

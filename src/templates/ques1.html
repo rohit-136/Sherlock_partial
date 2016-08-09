@@ -1,0 +1,100 @@
+<!Doctype html>
+<html>
+
+<style>
+.quiz-question
+{
+   position: absolute;
+   top:600px;
+   left: 600px;
+   width: 800%;
+
+}
+h2 { 
+   position: absolute; 
+   top: 0px; 
+   left: 50px; 
+   width: 200%; 
+color:black;
+text-shadow: 2px 2px #FF0000;
+font-size:50px
+
+}
+
+h3{
+position: absolute; 
+   top: 100px; 
+   left: 100px; 
+   width: 400%; 
+color:red;
+font-size:30px
+
+
+}
+h4{
+position: absolute; 
+   top: 150px; 
+   left: 100px; 
+   width: 400%; 
+color:red;
+font-size:30px
+
+
+}
+h5{
+position: absolute; 
+   top: 200px; 
+   left: 100px; 
+   width: 400%; 
+color:red;
+font-size:30px
+}
+h6{
+position: absolute; 
+   top: 250px; 
+   left: 100px; 
+   width: 400%; 
+color:red;
+font-size:30px
+
+
+}
+
+body{
+height:300%;
+width:50%;
+}
+
+</style>
+<head>
+<title>Sherlock Quiz</title>
+<link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='assets/ms-icon-310x310.png')}}">
+</head>
+<body>
+<div class="image">
+
+      <img src="{{ url_for('static', filename='assets/hound.jpg')}}" style='position:fixed;top:0px;left:0px;width:100%;height:100%;'/>
+
+
+<div class="container">
+    <div class="jumbotron">
+      <h2>What was the full form of H.O.U.N.D. ?</h2>
+<h3>A.  Homeland Organization Under North Dakota </h3>
+</br>
+<h4>B.  Homeland Office of Unoffical New Detectives </h4>
+</br>
+<h5>C.  It is the initals of the scientist's surnames</h5>
+</br>
+<h6>D.  It doesn't stand for anything</h6>
+</br>
+        </div>
+<div class="pull=left container quiz-question">
+
+    <a href="/2of15" class="btn btn-info btn-lg"  role="button">Next Question </a>
+
+</div>
+        </div>
+</div>
+
+</body>
+</html>

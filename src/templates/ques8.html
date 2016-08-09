@@ -1,0 +1,105 @@
+<!Doctype html>
+<html>
+
+<style>
+.quiz-question
+{
+   position: absolute;
+   top:600px;
+   left: 600px;
+   width: 800%;
+
+}
+
+h1 {
+   position: absolute;
+   top: 0px;
+   left: 50px;
+   width: 200%;
+color:black;
+text-shadow: 2px 2px #FF0000;
+font-size:50px
+
+}
+h2 { 
+   position: absolute; 
+   top: 50px;
+   left: 50px; 
+   width: 200%; 
+color:black;
+text-shadow: 2px 2px #FF0000;
+font-size:50px
+
+}
+
+h3{
+position: absolute;
+   top: 150px;
+   left: 100px;
+   width: 400%;
+color:yellow;
+font-size:30px
+
+
+}
+h4{
+position: absolute;
+   top: 200px;
+   left: 100px;
+   width: 400%;
+color:yellow;
+font-size:30px
+
+
+}
+h5{
+position: absolute;
+   top: 250px;
+   left: 100px;
+   width: 400%;
+color:yellow;
+font-size:30px
+}
+h6{
+position: absolute;
+   top: 300px;
+   left: 100px;
+   width: 400%;
+color:yellow;
+font-size:30px
+
+
+}
+
+body{
+height:300%;
+width:50%;
+}
+
+</style>
+<head>
+<title>Sherlock Quiz</title>
+<link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='assets/ms-icon-310x310.png')}}">
+</head>
+<body>
+
+<div class="image">
+
+      <img src="{{ url_for('static', filename='assets/blacklotus.jpg')}}" style='position:fixed;top:0px;left:0px;width:100%;height:100%;'/>
+      <h1>{{ user }} [{{ id }}] your last and final question is  :: </h1>
+      <h2>What was the name of the gang of Chinese smugglers?</h2>
+<h3>A. The Red Rose </h3>
+</br>
+<h4>B. The Black Rose </h4>
+</br>
+<h5>C. The Black Lotus</h5>
+</br>
+<h6>D. The Despicables Us</h6>
+</br>
+</div>
+<div class="pull=left container quiz-question">
+      <a href="/7of15" class="btn btn-info btn-lg"  role="button">Previous Question </a>
+<a href="/calculate1/{{ id }}" class="btn btn-info"  role="button">Ready To Answer </a>
+</div>
+</body>
+</html>

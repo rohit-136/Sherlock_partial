@@ -1,0 +1,27 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html>
+<head><META http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<h2>{{ id }}</h2>
+<div>
+
+ <div>
+     <form id="answers" action="/calculate/{{ id }}" method="post" target="_blank" onsubmit="try {return window.confirm(&quot;You are submitting your answers now. \n Are you sure?&quot;);} catch (e) {return false;}" >
+ 	<label> Your Answers :-  </label>
+ 	<input type="text" name="word">
+ 	<input type="submit" value="Calculate">
+
+	</form>
+
+	<label> Your Score this time is :  </label> : {{result}}
+	 </br>
+     </br>
+
+ </div>
+
+</div>
+
+
+</body></html>

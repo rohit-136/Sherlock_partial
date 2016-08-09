@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sherlock Quiz</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='assets/ms-icon-310x310.png')}}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container page-form">
+
+    <form id="login-form" action="/auth/login" method="post">
+        <div class="form-group">
+            <label for="email">Username</label>
+        <input type="text" id="email" class="form-control" name="email">
+            </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+        <input type="password" id="password" class="form-control" name="password">
+            </div>
+
+        <button type="submit" class="btn btn-info btn-lg btn-block">Allow me in !!</button>
+    </form>
+    </div>
+<div class="pull=left container quiz-question">
+    <a href="/" class="btn btn-primary"  role="button">Back </a>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Sherlock Quiz</title>
+<link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='assets/ms-icon-310x310.png')}}">
+</head>
+<body>
+{% if scores|length > 0 %}
+        {%for score in scores %}
+                <h3>You last played on {{ score.date }} and on that day your score was {{ score.score }}</h3>
+                </hr>
+        {% endfor %}
+{% else %}
+<h3>This Was Your First Play !! </h3>
+<a href="/1of15" >Replay</a>
+{% endif %}
+
+
+
+</body>
+</html>
